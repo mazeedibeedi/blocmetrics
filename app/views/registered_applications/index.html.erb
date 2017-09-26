@@ -1,0 +1,17 @@
+<h1>Registered Applications</h1>
+<div class="row">
+  <div class="col-md-8">
+    <% @registered_applications.each do |registered_app| %>
+      <div class="media">
+        <div class="media-body">
+          <h4 class="media-hearing">
+            <%= link_to registered_app.name, registered_app %>
+          </h4>
+        </div>
+      </div>
+    <% end %>
+  </div>
+  <div class="col-md-4">
+    <%= link_to "New Application", new_registered_application_path, class: 'btn btn-success' %>
+  </div>
+</div>

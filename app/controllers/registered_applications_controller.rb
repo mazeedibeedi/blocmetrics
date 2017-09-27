@@ -19,6 +19,7 @@ class RegisteredApplicationsController < ApplicationController
   end
 
   def show
+    @events = @registered_application.events.group_by(&:name)
   end
 
   def edit

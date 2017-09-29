@@ -21,6 +21,8 @@ source 'https://rubygems.org'
  gem 'bootstrap-sass'
  gem 'figaro'
  gem 'devise'
+ gem 'chartkick'
+ gem 'groupdate'
 
  group :development, :test do
    gem 'byebug'

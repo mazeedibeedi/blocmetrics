@@ -13,5 +13,5 @@ blocmetrics.report = function(eventName) {
    request.send(JSON.stringify(event));
 }
 ```
-For Rails applications, please include this under `app/javascripts/application.js`
+For Rails applications, please include this under `app/assets/javascripts/application.js`
 <tt>rake doc:app</tt>.
